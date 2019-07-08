@@ -1,0 +1,14 @@
+React Conditionals
+------------------
+
+- when you want to pick between showing two things:
+    {boolean ? thing_1 : thing_2}
+
+- thing_1 can be straight up JSX or another component
+
+- when you want to pick between showing one thing or not:
+    {boolean && thing_1}
+
+- in class-based constructor inside component, use 'this.state = {}' for init after super
+- without constructor, then you can just use 'state = {}'
+
