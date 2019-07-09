@@ -1,5 +1,6 @@
-React Conditionals
-------------------
+==================
+React Conditionals:
+==================
 
 - when you want to pick between showing two things:
     {boolean ? thing_1 : thing_2}
@@ -9,6 +10,33 @@ React Conditionals
 - when you want to pick between showing one thing or not:
     {boolean && thing_1}
 
+===========================
+Class/Functional Components:
+===========================
+
 - in class-based constructor inside component, use 'this.state = {}' for init after super
 - without constructor, then you can just use 'state = {}'
 
+- functional components:
+const ComponentName = (props) => {
+    return (
+        // JSX in here
+    );
+}
+
+ComponentName.propTypes = {
+    ....
+}
+
+- props can be destructured as ({thingy1, thingy2}) => ...
+
+======
+Random:
+======
+
+- import STUFF from 'library' does the default import
+- import { SubSTUFF } from 'library' does custom import
+
+- react-dom-router has Switch, Route, and Link
+- Switch holds all the routes (I think), you can embed components within the routes
+- Link allows to direct to other routes without using the <a> tag
