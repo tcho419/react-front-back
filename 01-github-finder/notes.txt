@@ -40,3 +40,4 @@ Random:
 - react-dom-router has Switch, Route, and Link
 - Switch holds all the routes (I think), you can embed components within the routes
 - Link allows to direct to other routes without using the <a> tag
+- can get params from the URL using 'match.params'
