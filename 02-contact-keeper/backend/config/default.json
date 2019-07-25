@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://tim123:tim123@clusterzero-ewpxj.mongodb.net/test?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://tim123:tim123@clusterzero-ewpxj.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "secret19"
 }
