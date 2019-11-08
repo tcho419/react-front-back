@@ -11,8 +11,8 @@ import {
   CLEAR_FILTER
 } from '../types';
 
-export const contactContext = createContext();
-const { Provider } = contactContext;
+export const ContactContext = createContext();
+const { Provider } = ContactContext;
 
 const ContactState = ({ children }) => {
   const initialState = {
@@ -44,6 +44,10 @@ const ContactState = ({ children }) => {
   const [state, dispatch] = useReducer(contactReducer, initialState);
 
   // Add Contact
+  const addContact = contact => {
+    contact.id = uuid.v4();
+    dispatch({ type: ADD_CONTACT, payload: contact });
+  };
 
   // Delete Contact
 
@@ -60,7 +64,8 @@ const ContactState = ({ children }) => {
   return (
     <Provider
       value={{
-        contacts: state.contacts
+        contacts: state.contacts,
+        addContact
       }}
     >
       {children}
