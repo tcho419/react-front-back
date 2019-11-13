@@ -94,8 +94,7 @@ const ContactState = ({ children }) => {
         updateContact,
         filterContacts,
         clearFilter
-      }}
-    >
+      }}>
       {children}
     </Provider>
   );

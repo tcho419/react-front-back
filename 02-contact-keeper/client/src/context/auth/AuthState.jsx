@@ -47,8 +47,7 @@ const AuthState = ({ children }) => {
         loading: state.loading,
         user: state.user,
         error: state.error
-      }}
-    >
+      }}>
       {children}
     </Provider>
   );
