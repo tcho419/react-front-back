@@ -1,18 +1,39 @@
 {
   "logs": [
     {
-      "message": "Testing Application",
-      "attention": false,
-      "tech": "John Doe",
-      "date": "2020-01-09T22:08:43.448Z",
-      "id": 1
-    },
-    {
       "message": "My computer is going to break! Halp!",
       "attention": true,
       "tech": "Sam Smith",
       "date": "2020-01-09T22:09:00.718Z",
       "id": 2
+    },
+    {
+      "message": "Test Message",
+      "attention": false,
+      "tech": "John Doe",
+      "date": "2020-01-09T22:40:05.285Z",
+      "id": 3
+    },
+    {
+      "message": "Test Message",
+      "attention": true,
+      "tech": "Sara Wilson",
+      "date": "2020-01-09T22:44:31.673Z",
+      "id": 4
+    },
+    {
+      "message": "Why can't I use ID #1?",
+      "attention": false,
+      "tech": "John Doe",
+      "date": "2020-01-09T22:46:04.342Z",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "message": "Testttttttt YAYA",
+      "attention": false,
+      "tech": "Sara Wilson",
+      "date": "2020-01-09T23:11:23.749Z"
     }
   ],
   "techs": [
