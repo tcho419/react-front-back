@@ -1,49 +1,35 @@
 {
   "logs": [
     {
-      "id": 1,
-      "message": "Changed network card in server 007",
-      "attention": false,
-      "tech": "Sam Smith",
-      "date": "2019-05-31T15:46:10.179Z"
-    },
-    {
-      "id": 2,
-      "message": "Fixed hard drive on workstation 002",
+      "message": "Testing Application",
       "attention": false,
       "tech": "John Doe",
-      "date": "2019-05-31T16:18:04.245Z"
+      "date": "2020-01-09T22:08:43.448Z",
+      "id": 1
     },
     {
-      "id": 3,
-      "message": "1122 wireless down",
+      "message": "My computer is going to break! Halp!",
       "attention": true,
-      "tech": "Sara Wilson",
-      "date": "2019-05-31T15:46:48.690Z"
-    },
-    {
-      "id": 4,
-      "message": "Workstation 026 is up and running",
-      "attention": false,
-      "tech": "Sara Wilson",
-      "date": "2019-05-31T19:57:35.544Z"
+      "tech": "Sam Smith",
+      "date": "2020-01-09T22:09:00.718Z",
+      "id": 2
     }
   ],
   "techs": [
     {
       "id": 1,
-      "firstName": "John",
-      "lastName": "Doe"
+      "firstName": "Althilus",
+      "lastName": "Green"
     },
     {
       "id": 2,
-      "firstName": "Sam",
-      "lastName": "Smith"
+      "firstName": "Clout",
+      "lastName": "Blue"
     },
     {
       "id": 3,
-      "firstName": "Sara",
-      "lastName": "Wilson"
+      "firstName": "Mayple",
+      "lastName": "Red"
     }
   ]
 }
