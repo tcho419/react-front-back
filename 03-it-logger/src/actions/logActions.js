@@ -3,6 +3,7 @@ import {
   ADD_LOG,
   DELETE_LOG,
   UPDATE_LOG,
+  SEARCH_LOGS,
   SET_LOADING,
   LOGS_ERROR,
   SET_CURRENT,
@@ -35,7 +36,7 @@ export const getLogs = () => async dispatch => {
     .catch(error => {
       dispatch({
         type: LOGS_ERROR,
-        payload: error.response.data
+        payload: error.response.statusText
       });
     });
 };
@@ -54,7 +55,7 @@ export const addLog = log => async dispatch => {
     .catch(error => {
       dispatch({
         type: LOGS_ERROR,
-        payload: error.response.data
+        payload: error.response.statusText
       });
     });
 };
@@ -73,34 +74,47 @@ export const deleteLog = id => async dispatch => {
     .catch(error => {
       dispatch({
         type: LOGS_ERROR,
-        payload: error.response.data
+        payload: error.response.statusText
       });
     });
 };
 
 // Update log on server
 export const updateLog = log => async dispatch => {
-  // try to fix this using axios
-  try {
-    setLoading();
-    const response = await fetch(`/logs/${log.id}`, {
-      method: 'PUT',
-      body: JSON.stringify(log),
-      headers: {
-        'Content-Type': 'application/json'
-      }
+  setLoading();
+  await axios
+    .put(`/logs/${log.id}`, log)
+    .then(response => {
+      dispatch({
+        type: UPDATE_LOG,
+        payload: response.data
+      });
+    })
+    .catch(error => {
+      dispatch({
+        type: LOGS_ERROR,
+        payload: error.response.statusText
+      });
     });
-    const data = await response.json();
-    dispatch({
-      type: UPDATE_LOG,
-      payload: data
+};
+
+// Search server logs
+export const searchLogs = text => async dispatch => {
+  setLoading();
+  await axios
+    .get(`/logs?q=${text}`)
+    .then(response => {
+      dispatch({
+        type: SEARCH_LOGS,
+        payload: response.data
+      });
+    })
+    .catch(error => {
+      dispatch({
+        type: LOGS_ERROR,
+        payload: error.response.statusText
+      });
     });
-  } catch (error) {
-    dispatch({
-      type: LOGS_ERROR,
-      payload: error.response.data
-    });
-  }
 };
 
 // Set current log

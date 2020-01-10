@@ -22,18 +22,25 @@
       "id": 4
     },
     {
+      "id": 6,
       "message": "Why can't I use ID #1?",
       "attention": false,
-      "tech": "John Doe",
-      "date": "2020-01-09T22:46:04.342Z",
-      "id": 6
+      "tech": "Ariella Yellow",
+      "date": "2020-01-10T21:41:31.450Z"
     },
     {
       "id": 7,
-      "message": "Testttttttt YAYA",
+      "message": "This officially works, yay!",
       "attention": false,
-      "tech": "Sara Wilson",
-      "date": "2020-01-09T23:11:23.749Z"
+      "tech": "John Doe",
+      "date": "2020-01-10T19:51:13.864Z"
+    },
+    {
+      "message": "New Techs Are Here!",
+      "attention": true,
+      "tech": "Clout Blue",
+      "date": "2020-01-10T21:21:17.764Z",
+      "id": 8
     }
   ],
   "techs": [
